@@ -1,0 +1,32 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "styles.css" %}"/>
+<script src="https://kit.fontawesome.com/6e32ab0b37.js" crossorigin="anonymous"></script>
+{% include 'base/navbar.html' %}
+
+
+
+<main class="landingPicBox">
+    <img src="{% static 'landing_pic.jpg' %}" alt="landPic"/>
+</main>
+<article class="scParent">
+    <a class="scMap" href="/">
+        <div class="cross">
+            <span style="color:red; font-size:70px;"><i class="fa-solid fa-hand-holding-medical"></i></span>
+        </div>
+        <span class="scMapText">Nasze<br/>placówki</span>
+    </a>
+
+    <a class="scMap" href="/">
+        <div class="cross">
+            <span style="color:orange; font-size:70px;"><i class="fa-solid fa-book-medical"></i></i></span>
+        </div>
+        <span class="scMapText">Lista<br/>badań</span>
+    </a>
+
+    <a class="scMap" href="/">
+        <div class="cross">
+            <span style="color:limegreen; font-size:70px;"><i class="fa-solid fa-file-medical"></i></i></i></span>
+        </div>
+        <span class="scMapText">Sprawdź<br/>wyniki</span>
+    </a>
+</article>

@@ -1,0 +1,62 @@
+.landingPicBox{
+    display: block;
+    overflow: clip;
+    padding-top: 1rem;
+}
+.scMap{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    color: white;
+    width: 260px;
+    height: 260px;
+    border-radius: 15px;
+    background-color: teal;
+    margin-left: auto;
+    margin-right: auto;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    margin-bottom: 0.875rem;
+    text-align: left;
+    margin: 0rem 1rem 0rem 0rem
+  }
+.scMap:hover{
+    text-decoration: none;
+    color: white;
+} 
+  .scParent{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.875rem;
+    margin-top:2rem;
+  }
+  .scMap:hover{
+    background-color: #077bff;
+  }
+  .scMapText{
+    padding-top: 1rem;
+  }
+  .cross{
+    height: 100px;
+    position: relative;
+    width: 20px;
+    top:57%;
+    left: 63%;
+  }
+  .cross:after{
+    content: "";
+    height: 20px;
+    left: -40px;
+    position: absolute;
+    top: 40px;
+    width: 100px;
+  }
+
+  
