@@ -16,5 +16,5 @@ class Outpost(models.Model):
     premise = models.PositiveIntegerField(default=1, blank=True, null=True)
 
     def __str__(self) -> str:
-        return self.outpost_id
+        return self.city
 
