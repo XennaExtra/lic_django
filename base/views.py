@@ -6,4 +6,5 @@ from django.contrib.auth.decorators import login_required
 
 def index(request):
     return render(request, 'base/homepage.html')
-
+def badania(request):
+    return render(request, 'base/lista_badan.html')
