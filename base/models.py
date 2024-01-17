@@ -18,3 +18,4 @@ class Outpost(models.Model):
     def __str__(self) -> str:
         return self.city
 
+s
