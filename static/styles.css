@@ -26,7 +26,7 @@
     text-decoration: none;
     color: white;
 } 
-  .scParent{
+.scParent{
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -37,26 +37,36 @@
     padding: 0.875rem;
     margin-top:2rem;
   }
-  .scMap:hover{
+.scMap:hover{
     background-color: #077bff;
-  }
-  .scMapText{
+}
+.scMapText{
     padding-top: 1rem;
-  }
-  .cross{
+}
+.cross{
     height: 100px;
     position: relative;
     width: 20px;
     top:57%;
     left: 63%;
-  }
-  .cross:after{
+}
+.cross:after{
     content: "";
     height: 20px;
     left: -40px;
     position: absolute;
     top: 40px;
     width: 100px;
-  }
+}
 
+.ExamCardCon{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    padding: 1rem 0 1rem 1rem;
+    border: 1px solid gray;
+    border-radius: 15px;
+    text-align: center;
+}
   

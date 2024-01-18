@@ -9,14 +9,14 @@
     <img src="{% static 'landing_pic.jpg' %}" alt="landPic"/>
 </main>
 <article class="scParent">
-    <a class="scMap" href="/">
+    <a class="scMap" href={% url 'nasze_placowki' %}>
         <div class="cross">
             <span style="color:red; font-size:70px;"><i class="fa-solid fa-hand-holding-medical"></i></span>
         </div>
         <span class="scMapText">Nasze<br/>placówki</span>
     </a>
 
-    <a class="scMap" href="/">
+    <a class="scMap" href={% url 'lista_badan' %}>
         <div class="cross">
             <span style="color:orange; font-size:70px;"><i class="fa-solid fa-book-medical"></i></span>
         </div>

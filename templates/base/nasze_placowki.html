@@ -7,19 +7,27 @@
 
 
 <main class="landingPicBox">
-    <img src="{% static 'landing_pic.jpg' %}" alt="landPic"/>
+    <img src="{% static 'map.jpg' %}" alt="landPic"/>
 </main>
     <div style="width: 85%; margin-left:auto; margin-right:auto; margin-top: 1rem; padding: 1rem;">
-        {% for exam in exams %}
+        {% for place in places %}
             <div style="display: block; float: left; margin-right:1rem; margin-bottom:2rem;">
                 <div class="card" style="width: 18rem; min-height:13rem;">
                     <div class="card-body">
-                        <h5 class="card-title">{{ exam.name }}</h5>
-                        <p class="card-text">Kategoria: {{ exam.category }}</p>
-                        <p class="card-text">Przewidywany czas: {{ exam.est_time_needed }} minut</p>
+                        <h5 class="card-title">{{ place.outpost_name }}</h5>
+                        <p class="card-text">{{ place.city }}</p>
+                        {% if place.premise is None %}
+                            <p class="card-text">ul. {{ place.street }} {{ place.building }}</p>
+                        {% else %}
+                            <p class="card-text">ul. {{ place.street }} {{ place.building }}/{{ place.premise }}</p>
+                        {% endif %}
                     </div>
                 </div>
             </div>
         {% endfor %}
     </div>
 {% endblock %}
+<body>
+
+</body>
+</html>
